@@ -10,7 +10,6 @@ ublox_gps_node:
 
     rate: 20.0
     nav_rate: 1
-    enable_ppp: true
     
     publish:
       all: true

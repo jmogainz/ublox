@@ -39,9 +39,9 @@ class UbloxFirmware7Plus : public UbloxFirmware {
     }
 
     fix_pub_ =
-        node_->create_publisher<sensor_msgs::msg::NavSatFix>("~/fix", 1);
+        node_->create_publisher<sensor_msgs::msg::NavSatFix>("/gps/fix", 1);
     vel_pub_ =
-        node_->create_publisher<geometry_msgs::msg::TwistWithCovarianceStamped>("~/fix_velocity",
+        node_->create_publisher<geometry_msgs::msg::TwistWithCovarianceStamped>("/gps/fix_velocity",
                                                                    1);
   }
 
