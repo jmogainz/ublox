@@ -4,12 +4,17 @@ ublox_gps_node:
     debug: 0                    # Range 0-4 (0 means no debug statements will print)
     device: /dev/ttyACM0
     frame_id: gps
-    config_on_startup: false
+    config_on_startup: true
     uart1:
+      baudrate: 115200
+    uart2: 
+      baudrate: 115200
+    usb:
       baudrate: 115200
 
     rate: 20.0
-    nav_rate: 1
+
+    tmode3: 0
     
     publish:
       all: true
